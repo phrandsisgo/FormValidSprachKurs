@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formular</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="/css/styleAll.css">
+</head>
+<body>
+    <h1 id="pageTitle">ImmersLang</h1>
+    <p id="produktbeschreibung">
+        Sie wollen eine neue Sprache lernen und zwar nicht mit langweiliger Grammatik sondern in dem sie eiskalt in die Sprache eintauchen und mit Kontext zu neuen Kenntnisse kommen?
+<br><br>
+Dann Zögern sie nicht weiter, sie sind nun nur noch wenige Schritte von einem tollen Lern-erlebnis entfernt.
+    </p>
+    <div id="formdiv">
+        <form action="notclear()">
+            <label for="name"> Name</label>
+            <input type="text" name="name" id="name" placeholder="Muster">
+            <br class="formspacer">
+            <label for="vorname"> Vorname</label>
+            <input type="text" name="vorname" id="vorname" placeholder="Max">
+            <br class="formspacer">
+            <label for="email"> E-Mail</label>
+            <input type="email" name="email" id="email" placeholder="beispiel@opportunity.ch">
+            <br class="formspacer">
+            <label for="handynummer"> Handynummer</label>
+            <input type="tel" name="handynummer" id="handynummer" placeholder="079 123 45 67">
+            <br class="formspacer">
+            <label for="geburtsdatum"> Geburtsdatum</label>
+            <input type="date" name="geburtsdatum" id="geburtsdatum">
+            <br class="formspacer">
+            <label for="NameKurs">Name des Kurses</label>
+            <select name="NameKurs" id="NameKurs">
+                <option value="Englisch">Englisch</option>
+                <option value="Französisch">Französisch</option>
+                <option value="Spanisch">Spanisch</option>
+                <option value="Italienisch">Italienisch</option>
+                <option value="Deutsch">Deutsch</option>
+                <option value="Russisch">Russisch</option>
+                <option value="tokipona">tokipona</option>
+            </select>
+            <br class="formspacer">
+            <label for="Kursort">Kursort</label>
+            <select name="kusort" id ="kursort">
+                <option value="Bern">Bern</option>
+                <option value="Zürich">Zürich</option>
+                <option value="Basel">Basel</option>
+                <option value="Genf">Genf</option>
+                <option value="Lausanne">Lausanne</option>
+                <option value="Luzern">Luzern</option>
+                <option value="St. Gallen">St. Gallen</option>
+                <option value="Winterthur">Winterthur</option>
+                <option value="Lugano">Lugano</option>
+                <option value="Biel/Bienne">Biel/Bienne</option>
+                <option value="Thun">Thun</option>
+            </select>
+            <br class="formspacer">
+            <label for="schwierigkeitsgrad">Schwierigkeitsgrad</label>
+            <select name="schwierigkeitsgrad" id="schwierigkeitsgrad">
+                <option value="A1">A1</option>
+                <option value="A2">A2</option>
+                <option value="B1">B1</option>
+                <option value="B2">B2</option>
+                <option value="C1">C1</option>
+                <option value="C2">C2</option>
+            </select>
+            <br class="formspacer">
+            <label for="finanzen" id="finanzen">Finanzielle Mittel</label>
+            <input type="range" name="finanzen" id="finanzen" min="0" max="10000" step="100" value="0" placeholder="geben sie ein">
+        </form>
+    </div>
+</body>
+</html>
