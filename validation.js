@@ -1,29 +1,21 @@
 function formSubmitFunc(){
-    alert("Thank you for your submission!");
-    event.preventDefault();
-    var name = document.getElementById("name").value;
-    var email = document.getElementById("email").value;
-    var phone = document.getElementById("phone").value;
+    alert("Formular wurde abgeschickt");
+    
+    let name = document.getElementById("name").value;
+    let vorname = document.getElementById("vorname").value;
+    let email = document.getElementById("email").value;
+    let handynummer = document.getElementById("handynummer").value;
+    let geburtsdatum = document.getElementById("geburtsdatum").value;
+    let nameKurs = document.getElementById("NameKurs").value;
+    let kursort = document.getElementById("kursort").value;
+    let schwierigkeitsgrad = document.getElementById("schwierigkeitsgrad").value;
 
-    if(name == ""){
-        document.getElementById("nameError").innerHTML = "Please enter your name";
-        return false;
-    }
-    if(email == ""){
-        document.getElementById("emailError").innerHTML = "Please enter your email";
-        return false;
-    }
-    if(phone == ""){
-        document.getElementById("phoneError").innerHTML = "Please enter your phone number";
-        return false;
-    }
-    if(phone.length != 10){
-        document.getElementById("phoneError").innerHTML = "Please enter a valid phone number";
-        return false;
-    }
-    if(isNaN(phone)){
-        document.getElementById("phoneError").innerHTML = "Please enter a valid phone number";
-        return false;
-    }
-    return true;
+    sessionStorage.setItem("name", name);
+    sessionStorage.setItem("vorname", vorname);
+    sessionStorage.setItem("email", email);
+    sessionStorage.setItem("handynummer", handynummer);
+    sessionStorage.setItem("geburtsdatum", geburtsdatum);
+    sessionStorage.setItem("nameKurs", nameKurs);
+    sessionStorage.setItem("kursort", kursort);
+    sessionStorage.setItem("schwierigkeitsgrad", schwierigkeitsgrad);
 }
