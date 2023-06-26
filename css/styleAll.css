@@ -1,0 +1,44 @@
+input[type = "text"] {
+    width: 90%;
+    padding: 10px;
+    margin: 4px 4% ;
+    border: 1px solid rgb(61, 221, 173);
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+input[type = "tel"] {
+    width: 90%;
+    padding: 10px;
+    margin: 4px 4% ;
+    border: 1px solid rgb(61, 221, 173);
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+input[type = "email"] {
+    width: 90%;
+    padding: 10px;
+    margin: 4px 4% ;
+    border: 1px solid rgb(61, 221, 173);
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+input[type = "date"] {
+    width: 90%;
+    padding: 10px;
+    margin: 4px 4% ;
+    border: 1px solid rgb(61, 221, 173);
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+.selecterino{
+    width: 90%;
+    padding: 10px;
+    margin: 4px 4% ;
+    border: 1px solid rgb(61, 221, 173);
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+.mergLeftpro{
+    margin-left: 4%;
+    margin-right: 4%;
+}
