@@ -34,7 +34,7 @@ function formSubmitFunc(){
         document.getElementById("geburtsdatumHelp").style.color = "red";
         event.preventDefault();
     }else{
-        return true;
+        //return true;
         sessionStorage.setItem("name", name);
         sessionStorage.setItem("vorname", vorname);
         sessionStorage.setItem("email", email);
@@ -44,6 +44,27 @@ function formSubmitFunc(){
         sessionStorage.setItem("kursort", kursort);
         sessionStorage.setItem("schwierigkeitsgrad", schwierigkeitsgrad);
     }
+
     
  
+}
+function angabenSpawn() {
+    let name = sessionStorage.getItem("name");
+    let vorname = sessionStorage.getItem("vorname");
+    let email = sessionStorage.getItem("email");
+    let handynummer = sessionStorage.getItem("handynummer");
+    let geburtsdatum = sessionStorage.getItem("geburtsdatum");
+    let nameKurs = sessionStorage.getItem("nameKurs");
+    let kursort = sessionStorage.getItem("kursort");
+    let schwierigkeitsgrad = sessionStorage.getItem("schwierigkeitsgrad");
+   // alert("hallo "+ name + " " + vorname );
+   
+    document.getElementById("nameAngabe").innerHTML = "name= "+name;
+    document.getElementById("vornameAngabe").innerHTML = "vorname= "+vorname;
+    document.getElementById("emailAngabe").innerHTML = "email= "+email;
+    document.getElementById("handynummerAngabe").innerHTML = "handynummer= "+handynummer;
+    document.getElementById("geburtsdatumAngabe").innerHTML = "geburtsdatum= "+geburtsdatum;
+    document.getElementById("nameKursAngabe").innerHTML = "nameKurs= "+nameKurs;
+    document.getElementById("kursortAngabe").innerHTML = "kursort= "+kursort;
+    document.getElementById("schwierigkeitsgradAngabe").innerHTML = "schwierigkeitsgrad= "+schwierigkeitsgrad;
 }
