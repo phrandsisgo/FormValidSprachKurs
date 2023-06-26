@@ -37,6 +37,9 @@ input[type = "date"] {
     border: 1px solid rgb(61, 221, 173);
     border-radius: 4px;
     box-sizing: border-box;
+    appearance: auto;
+    color: rgb(61, 221, 173);
+    
 }
 .mergLeftpro{
     margin-left: 4%;
