@@ -1,5 +1,5 @@
 function formSubmitFunc(){
-    alert("Formular wurde abgeschickt");
+    //alert("Formular wurde abgeschickt");
     
     let name = document.getElementById("name").value;
     let vorname = document.getElementById("vorname").value;
@@ -9,13 +9,41 @@ function formSubmitFunc(){
     let nameKurs = document.getElementById("NameKurs").value;
     let kursort = document.getElementById("kursort").value;
     let schwierigkeitsgrad = document.getElementById("schwierigkeitsgrad").value;
-
-    sessionStorage.setItem("name", name);
-    sessionStorage.setItem("vorname", vorname);
-    sessionStorage.setItem("email", email);
-    sessionStorage.setItem("handynummer", handynummer);
-    sessionStorage.setItem("geburtsdatum", geburtsdatum);
-    sessionStorage.setItem("nameKurs", nameKurs);
-    sessionStorage.setItem("kursort", kursort);
-    sessionStorage.setItem("schwierigkeitsgrad", schwierigkeitsgrad);
+    if(name == "" || vorname == "" || email == "" || handynummer == "" || nameKurs == "" || kursort == "" || schwierigkeitsgrad == ""){
+        alert("Bitte füllen Sie alle Felder aus!");
+        event.preventDefault();
+    }else if (name.length <2){
+        document.getElementById("nameHelp").innerHTML = "Name muss mindestens 3 Zeichen lang sein!";    
+        document.getElementById("nameHelp").style.color = "red";
+        event.preventDefault();
+    }else if (vorname.length <2){
+        document.getElementById("vornameHelp").innerHTML = "Vorname muss mindestens 3 Zeichen lang sein!";
+        document.getElementById("vornameHelp").style.color = "red";
+        event.preventDefault();
+        //should be done with regex that the e-mail has a @ simbol and a .
+    }else if (email.length <5 || email.indexOf("@") == -1 || email.indexOf(".") == -1){
+        document.getElementById("emailHelp").innerHTML = "E-Mail muss mindestens 5 Zeichen lang sein und einen @ und einen . enthalten!";
+        document.getElementById("emailHelp").style.color = "red";
+        event.preventDefault();
+    }else if (handynummer.length <10){
+        document.getElementById("handynummerHelp").innerHTML = "Handynummer muss mindestens 10 Zeichen lang sein!";
+        document.getElementById("handynummerHelp").style.color = "red";
+        event.preventDefault();
+    }else if (geburtsdatum == ""){
+        document.getElementById("geburtsdatumHelp").innerHTML = "Bitte geben Sie ein Geburtsdatum ein!";
+        document.getElementById("geburtsdatumHelp").style.color = "red";
+        event.preventDefault();
+    }else{
+        return true;
+        sessionStorage.setItem("name", name);
+        sessionStorage.setItem("vorname", vorname);
+        sessionStorage.setItem("email", email);
+        sessionStorage.setItem("handynummer", handynummer);
+        sessionStorage.setItem("geburtsdatum", geburtsdatum);
+        sessionStorage.setItem("nameKurs", nameKurs);
+        sessionStorage.setItem("kursort", kursort);
+        sessionStorage.setItem("schwierigkeitsgrad", schwierigkeitsgrad);
+    }
+    
+ 
 }
