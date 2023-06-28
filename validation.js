@@ -58,7 +58,7 @@ function angabenSpawn() {
     let kursort = sessionStorage.getItem("kursort");
     let schwierigkeitsgrad = sessionStorage.getItem("schwierigkeitsgrad");
    // alert("hallo "+ name + " " + vorname );
-   
+   /*
     document.getElementById("nameAngabe").innerHTML = "name= "+name;
     document.getElementById("vornameAngabe").innerHTML = "vorname= "+vorname;
     document.getElementById("emailAngabe").innerHTML = "email= "+email;
@@ -67,4 +67,13 @@ function angabenSpawn() {
     document.getElementById("nameKursAngabe").innerHTML = "nameKurs= "+nameKurs;
     document.getElementById("kursortAngabe").innerHTML = "kursort= "+kursort;
     document.getElementById("schwierigkeitsgradAngabe").innerHTML = "schwierigkeitsgrad= "+schwierigkeitsgrad;
+    */
+    document.getElementById("nameAngabe").innerHTML = name;
+    document.getElementById("vornameAngabe").innerHTML = vorname;
+    document.getElementById("emailAngabe").innerHTML = email;
+    document.getElementById("handynummerAngabe").innerHTML = handynummer;
+    document.getElementById("geburtsdatumAngabe").innerHTML = geburtsdatum;
+    document.getElementById("nameKursAngabe").innerHTML = nameKurs;
+    document.getElementById("kursortAngabe").innerHTML = kursort;
+    document.getElementById("schwierigkeitsgradAngabe").innerHTML = schwierigkeitsgrad;
 }
