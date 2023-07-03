@@ -85,10 +85,15 @@
     </div>
    </div>
 
-    <button class="btn btn-success mergLeftpro">Bestätigen</button>
+    <button class="btn btn-success mergLeftpro" onclick="bestaetigung()">Bestätigen</button>
+
 </body>
 
 <script>
+    function bestaetigung(){
+        alert("Ihre Anmeldung wurde erfolgreich abgeschlossen");
+        window.location.href = "index.html";
+    }
     
 function angabenSpawn() {
     let name = sessionStorage.getItem("name");
