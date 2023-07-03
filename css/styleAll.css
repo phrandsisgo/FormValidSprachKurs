@@ -79,3 +79,6 @@ input[type = "date"] {
     transform: translate(-50%, -50%);
     z-index: 1;
   }
+  #spacing20{
+    width: 20px;
+  }
